@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+.services-box{
+    padding: 30px 0;
+    height: 100vh;
+}
+
+.services-inner{
+    width: 1200px;
+    margin: 0 auto;
+    background: grey url('https://globalpartners.vn/wp-content/uploads/2020/12/Banner2-Global-Mart-1024x640.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 10% 40px;
+}
+
+.services-content{
+    width: 60%;
+    text-align: center;
+}
+
+.services-content h2.title{
+    color: red;
+}
+
+.services-content h2{
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+.services-content p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.services-content .btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.services-content .btn:hover{
+    background: #fff;
+    color: #333;
+}

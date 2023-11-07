@@ -1,0 +1,22 @@
+.box{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    width: 350px;
+    border: 1px solid #ccc;
+}
+
+.box__title{
+    padding: 5px 0;
+    text-align: center;
+    background: green;
+    color: #fff;
+}
+
+.box__content{
+    padding: 20px;
+}
+
+.box__content.hide{
+    display: none;
+}

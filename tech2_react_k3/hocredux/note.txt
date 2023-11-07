@@ -1,0 +1,27 @@
+- Redux là 1 thư viện (Không liên quan gì đến React)
+- Redux là quản lý các Global State
+
+Redux: 
+
+- Store: Kho chung giúp quản lý các state để share tới Component 
+- Dispatch: Cập nhật dữ liệu lên Reducer (useDispatch)
+- Reducer
+- Actions
+- Action Creator
+- Selector: Lấy dữ liệu từ Redux (useSelector)
+
+Redux Middleware: Call api, xử lý logger,...
+
+- Redux Thunk
+- Redux Saga
+
+Redux Tookit: Bản đóng gói của Redux 
+
+- Seup nhanh hơn, code ngắn hơn
+- Khó hiểu hơn
+
+slice: createSlice()
+- Reducer 
+- Actions
+- Action Creator
+- Selector (Tự tạo)

@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": "aae830ae-9659-44d0-8087-f3281a147571",
+      "name": "Công việc 1",
+      "isCompleted": false
+    },
+    {
+      "id": "6c09f211-84f5-424f-b388-2f2bccebe4a3",
+      "name": "Công việc 2",
+      "isCompleted": false
+    },
+    {
+      "id": "d8b0f036-4d81-44db-b4ff-65d39f4ad61f",
+      "name": "Công việc 5",
+      "isCompleted": false
+    },
+    {
+      "id": "b5cd2878-70b3-4f74-b4ec-929ff5367a58",
+      "name": "công việc 6",
+      "isCompleted": false
+    },
+    {
+      "id": "e8d51cda-b290-42c8-ad53-d4b1e2fcd535",
+      "name": "công việc 7",
+      "isCompleted": false
+    }
+  ]
+}

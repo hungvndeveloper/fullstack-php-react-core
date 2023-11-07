@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+  </head>
+  <body>
+    <div class="container py-5">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#addUser"
+      >
+        Thêm mới
+      </button>
+      <h2>Danh sách người dùng</h2>
+
+      <form class="form-filters">
+        <div class="row mb-3">
+          <div class="col-3">
+            <select class="form-select" name="status">
+              <option value="all">Tất cả trạng thái</option>
+              <option value="active">Kích hoạt</option>
+              <option value="inactive">Chưa kích hoạt</option>
+            </select>
+          </div>
+          <div class="col-7">
+            <input
+              type="search"
+              placeholder="Nhập từ khóa tìm kiếm..."
+              class="form-control"
+              name="keyword"
+            />
+          </div>
+          <div class="col-2 d-grid">
+            <button type="submit" class="btn btn-success">Tìm</button>
+          </div>
+        </div>
+      </form>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="5%">STT</th>
+            <th>Tên</th>
+            <th>Email</th>
+            <th>Trạng thái</th>
+            <th width="5%">Sửa</th>
+            <th width="5%">Xóa</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="paginations"></div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="addUser"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Thêm người dùng
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="">Tên</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Tên..."
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="">Email</label>
+                  <input
+                    type="text"
+                    name="email"
+                    class="form-control"
+                    placeholder="Email..."
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Thêm mới</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="editUser"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Cập nhật người dùng
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="">Tên</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Tên..."
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="">Email</label>
+                  <input
+                    type="text"
+                    name="email"
+                    class="form-control"
+                    placeholder="Email..."
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Lưu lại</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate
+      veritatis eligendi dolorum numquam modi atque fugit non, reiciendis,
+      architecto impedit tenetur illum libero fugiat vitae rerum. Ipsa, corrupti
+      a.
+    </div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

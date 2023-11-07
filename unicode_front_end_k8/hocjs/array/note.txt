@@ -1,0 +1,5 @@
+1. length => Lấy số lượng phần tử trong manger
+2. Array.isArray() => Kiểm tra 1 biến có phải là mảng hay không
+3. forEach() => Duyệt mảng (Không break được, không trả về giá trị)
+4. fill() => Thay thế tất cả các phần tử trong mảng
+5. map() => Duyệt mảng và trả về giá trị (là 1 mảng)

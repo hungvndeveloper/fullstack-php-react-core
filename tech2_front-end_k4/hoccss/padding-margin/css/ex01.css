@@ -1,0 +1,12 @@
+.content{
+    border: 1px solid red;
+    width: 80%;
+    height: 200px;
+    padding: 30px;
+    margin: auto;
+}
+
+.parent{
+    border: 1px solid green;
+    height: 500px;
+}

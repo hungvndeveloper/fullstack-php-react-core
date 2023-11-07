@@ -1,0 +1,128 @@
+1. Cơ chế Server Side Rendering (SSR, MPA)
+
+Back-end (Server):
++ Nhận Request từ phía client 
++ Xử lý 
++ Trả về html
+
+Front-End (Client)
+
++ Hiển thị cho người dùng 
++ Javascript sẽ giải quyết các bài toán DOM đơn giản (Slider, validate, tab,...)
+
+=> MPA = Multi Page Application
+
+2. Cơ chế Client Side Rendering (CSR, SPA)
+
+Back-End
+- Tiếp nhận Request từ client 
+- Xử lý 
+- Trả về dữ liệu dưới dạng JSON (XML)
+
+Front-End 
+- Đọc dữ liệu từ server (Đọc Json, XML)
+- Tạo giao diện html bằng Javascript (Render)
+
+=> SPA = Single Page Application
+
+API bao gồm:
+
+- URL: Đường dẫn truy cập tới API
+- Params: tham số
+- Method: Phương thức
+- Headers: Thông tin đi kèm (Request, Response)
+- Body (Payload): Nội dung muốn gửi lên Server 
+- Response: Kết quả trả về từ Server
+
+HTTP Method (Phương thức)
+
+Theo chuẩn RESTFul API
+- GET => Lấy dữ liệu
+- POST => Thêm mới dữ liệu lên SERVER 
+- PUT => Cập nhật dữ liệu lên SERVER 
+- PATCH => Cập nhật dữ liệu lên SERVER 
+- DELETE => Xóa dữ liệu trên server
+
+Sự khác nhau giữ PUT và PATCH 
+
+- PUT: Ghi đè tất cả các trường dữ liệu (Nếu không gửi lên => set thành null)
+
+Ví dụ: Server có 5 trường, client chỉ gửi 3 trường để cập nhật => 2 trường còn lại trên server sẽ bị set thành null 
+
+- PATCH: Gửi trường nào lên server => Chỉ cập nhật trường đó => Các trường còn lại không thay đổi 
+
+Sự khác nhau giữ params và body
+
+- Body: Chỉ tồn tại trong các phương thức gửi dữ liệu lên server: post, patch, put 
+
+- Params: query phía sau url 
+
+Ví dụ: https://api.unicode.vn/users?id=1&search=abc
+
+- https://api.unicode.vn => Server API 
+- users => path, endpoint 
+- ?id=1&search=abc => params, search params
+
+Headers: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+
+Response: Giá trị trả về => JSON
+
+Response Status Code: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+=> Tất cả những quy định về API do back-end quyết định
+
+=> Call api => Ajax
+
+Các phương thức call api trong Javascript
+ 
+- XmlHttpRequest 
+- fetch => tự động trả về 1 promise (Xử lý bất đồng bộ trong JS)
+- Thư viện ngoài: axios
+
+Authentication => Xác thực (Đăng nhập)
+- API
+- Call api => Check xác thực (Do phía server xử lý)
+
+Quy trình login: 
+
+1. Front-End call api login (email, password)
+2. Server xử lý xem có hợp lệ hay không? 
+- TH1: Thông tin không hợp lệ => Response => Front-End thông báo đăng nhập không hợp lệ
+- TH2: Thông tin hợp lệ => Server tạo Token => Trả về Response => Front-End sẽ lưu lại (Storage ở trình duyệt, Cookie,...)
+
+Quy trình lấy thông tin đăng nhập (Sau khi login)
+- Call api profile (Gửi kèm Token)
+- Nếu token hợp lệ => Server trả về thông tin tương ứng 
+- Nếu token không hợp lệ => Server sẽ chuyển về trang login
+
+Quy trình logout 
+- Call api đăng xuất (Xóa token trên server)
+- Nếu server xóa token thành công => Trả về trạng thái => Client xóa token trên trình duyệt
+
+=> Lưu ý quá trình xóa token trên server
+Nếu hệ thống hoạt động đa nền tảng (web, apps,...)
+Khi xóa => Gửi thiết bị đang xóa
+
+=> Giả lập server Authentication: json-server-auth
+
+Authorization => Phân quyền => Được làm gì
+
+Trên thực tế
+
+Quá trình check user với server 
+
+Ví dụ: http://api.unicode.vn/user (Kèm bearer token)
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZhbnR1YW5AZ21haWwuY29tIiwiaWF0IjoxNjczNDQ2NzQ1LCJleHAiOjE2NzM0NTAzNDUsInN1YiI6IjMifQ.nsDC3jC8KtHe4OAxehXKcY3BPuMKH9i5iK-91yJCZcU
+
+=> JSON WEB TOKEN => Chuỗi token dùng để truyền các gói tin qua API
+
+Tổng kết: 
+
+- Cách fetch api: get, post, put, patch, delete
+- Authentication, Authorization
+
+Lưu ý: 
+
+- Headers, Http Response Status Code => https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+- Cứ làm việc với api => Bắt buộc phải có loading

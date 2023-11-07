@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.tabs {
+    max-width: 80%;
+    margin: 30px auto;
+}
+
+
+.tabs ul {
+    display: flex;
+    gap: 5px;
+}
+
+.tabs ul li>* {
+    color: #333;
+    display: block;
+    text-decoration: none;
+    background: #efefef;
+    padding: 10px 30px;
+}
+
+.tabs ul li.active>* {
+    background: green;
+    color: #fff;
+}
+
+.tabs .tabs__content {
+    padding: 15px 10px;
+    border: 1px solid #efefef;
+
+}
+
+.tabs .tabs__content .tabs--panel {
+    opacity: 0;
+    transition-property: opacity, visibility;
+    transition-timing-function: linear;
+    display: none;
+}
+
+.tabs .tabs__content .tabs--panel.active {
+    opacity: 1;
+}
+
+.tabs .tabs__content .tabs--panel.show {
+    display: block;
+}
+
+/* .tabs .tabs__content .tabs--panel:not(.active) {
+    display: none;
+} */
+
+/*
+Thuộc tính transition chỉ có tác dụng với các thuộc có giá trị là số
+Thuộc tính display giải quyết vấn đề ẩn không gian hiển thị
+Thuộc tính display làm mất hiệu ứng => delay quá trình display none và block (setTimeout bằng với thời gian của thuộc tính transition)
+*/

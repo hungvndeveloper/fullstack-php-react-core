@@ -1,0 +1,10 @@
+.todo-item.completed span:nth-child(2) {
+  text-decoration: line-through;
+}
+.todo-item span:nth-child(2) {
+  width: 80%;
+}
+.todo-item span:last-child {
+  cursor: pointer;
+  color: red;
+}/*# sourceMappingURL=Todos.css.map */

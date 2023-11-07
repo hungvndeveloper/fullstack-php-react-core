@@ -1,0 +1,38 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "text": "Learn JavaScript"
+    },
+    {
+      "id": 2,
+      "text": "Learn React JS"
+    },
+    {
+      "id": 3,
+      "text": "Learn PHP"
+    }
+  ],
+  "users": [
+    {
+      "id": 3,
+      "name": "John Doe 3"
+    },
+    {
+      "name": "Tạ Hoàng An",
+      "id": 4
+    },
+    {
+      "name": "Anh Quân",
+      "id": 5
+    },
+    {
+      "name": "Hoàng An Unicode",
+      "id": 6
+    },
+    {
+      "name": "Anh Tuấn",
+      "id": 7
+    }
+  ]
+}

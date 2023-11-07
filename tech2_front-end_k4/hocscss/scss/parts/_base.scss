@@ -1,0 +1,28 @@
+html{
+    font-size: $baseFontSize;
+}
+
+body{
+    font-family: $fontFamily;
+    color: $textColor;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: $linkColor;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+// .box{
+//     padding: 30px 0;
+//     background: gray;
+// }

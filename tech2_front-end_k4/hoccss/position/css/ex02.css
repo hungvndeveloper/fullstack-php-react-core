@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 600px;
+    height: 600px;
+    margin: 30px auto;
+    border: 1px solid black;
+    position: relative;
+}
+
+.content .item{
+    padding: 10px 30px;
+    margin: 0 0;
+    border: 1px solid red;
+    width: 300px;   
+}
+
+.content .item.item-1{
+    background: green;
+    position: relative;
+    top: 20px;
+    z-index: 1;
+}
+
+.content .item.item-2{
+    background: red;
+    position: relative;
+    z-index: 2;
+}
+
+.content .item.item-3{
+    background: blue;
+}
+
+.content .item.item-4{
+    background: blueviolet;
+}

@@ -1,0 +1,14 @@
+Tình huống
+
+- Share data giữa các component (Render props)
+- share data từ component xuống component không cần thông qua props
+
+ComponentA => ComponentB => ComponentC
+
+=> Giải quyết bằng Context 
+
+- Đối tượng context => React.createContext()
+- Provider => Component bên trong đối tượng context => Chia sẻ dữ liệu tới các component con
+- Consumer => Nhận dữ liệu từ Provider
+
+Xây dựng component StateProvider để quản lý Global State

@@ -1,0 +1,56 @@
+.footer{
+    margin-bottom: 30px;
+
+    .footer__inner{
+        background: url('../images/footer-bg.jpg') no-repeat;
+        background-size: cover;
+        color: #fff;
+
+        .inner__top{
+            padding: 10% 20px;
+            .footer--contact{
+                height: 100%;
+                font-family: BebasNeue, sans-serif;
+                p{
+                    display: flex;
+                    font-size: 1.3rem;
+                    i{
+                        display: block;
+                        width: 30px;
+                        font-size: 1.5rem;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .inner__bottom{
+            padding: 0px 20px 20px;
+            .footer--copyright{
+                font-family: "BebasNeue";
+            }
+            .footer--social{
+                display: flex;
+                justify-content: flex-end;
+                column-gap: 10px;
+                li{
+                    a{
+                        color: #090908;
+                        background: #fff;
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+//padding-top: 10% => tỷ lệ theo cái gì? width

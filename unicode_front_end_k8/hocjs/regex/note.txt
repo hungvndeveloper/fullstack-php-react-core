@@ -1,0 +1,129 @@
+Regular Expression: Biểu thức chính quy
+
+- Được sử dụng để xử lý chuỗi nâng cao
+- Khớp bằng ký hiệu, đòi hỏi các lập trình viên phải tuân thủ => Nếu không sẽ không chạy Được
+
+Regex giải quyết các bài toán 
+
+- So khớp => Kiểm tra chuỗi có phù hợp với Pattern: Số điện thoại, email,...
+
+- Cắt chuỗi => Bóc tách nội dung trong 1 chuỗi: Lấy tất cả số điện thoại của 1 văn bản
+
+- Thay thế => Thay thế nội dung trong văn bản dựa vào Regex: Thay các số điện thoại trong văn bản thành "***"
+
+Trong JS có các hàm như sau: 
+
+- test() => So khớp
+
+- match() => Cắt chuỗi
+
+- replace() => Thay thế
+
+Cú pháp chung của Regex: 
+
+const pattern = /cac_ky_hieu/modifier;
+
+1. Các ký hiệu cơ bản trong Regex
+
+- string (Chuỗi)
+
+- ^: Khớp đầu Chuỗi
+
+- $: Khớp cuối chuỗi
+
+- [A-Z]: Chữ hoa
+
+- [a-z]: Chữ thường
+
+- [0-9]: Số 
+
+- [charlist]: Các ký tự ([abc])
+
+=> Lưu ý: Các biểu thức trong [] có thể kết hợp với nhau và điều kiện quan hệ là hoặc 
+
+Nếu có nhiều cặp ngoặc vuông => Điều kiện VÀ và phải đúng theo thứ tự
+
+Website test Regex: https://regex101.com/
+
+Mặc định các biểu thức ký hiệu sẽ có độ dài là 1 => Để biểu thức chính xác, cần thêm độ dài cho các kí hiệu
+
+- {min, max} => Độ dài từ min đến max 
+- {min,} => Độ dài >=min 
+- {,max} => Độ dài <=max 
+- {max} => Độ dài = max 
+
+=> Độ dài được viết ngay sau biểu thức cần thiết lập
+
+Các ký hiệu viết tắt của độ dài
+
++ => Viết tắt của {1,}
+* => Viết tắt của {0,}
+? => Viết tắt của {0,1}
+
+Các kí hiệu đặc biệt của biểu thức chính quy 
+
+.
+/
++
+?
+*
+[
+]
+^
+$
+=> Nếu muốn so khớp các kí hiệu đặc biệt => Cần phải thêm ký tự escape (\) vào trước các ký tự đó
+
+Ký hiệu dấu . => Thể hiện cho tất cả các ký tự (Bao gồm các khoảng trắng, các ký tự đặc biệt)
+
+Ký hiệu hoặc |
+
+=> Khi nhóm các biểu thức phức tạp => Nên đưa vào cặp ngoặc ()
+
+Ký hiệu phủ định: ^ (Viết trong biểu thức)
+
+Ví dụ: Kiểm tra email có hợp lệ hay không?
+
+username@domain
+
+username: 
+
+- chữ thường, số, gạch ngang, gạch dưới, dấu chấm
+- bắt đầu bằng chữ cái 
+- Độ dài >=3
+
+domain: name.ext 
+
+- name: 
++ chữ thường, số, gạch ngang, gạch dưới, dấu chấm
++ độ dài >=1
+
+- ext: 
++ Chũ thường 
++ độ dài >=2
+
+Capturing Group 
+
+- Chụp lại 1 đoạn biểu thức chính quy con => Trả về trong hàm match()
+
+- Không hỗ trợ với modifier g (global)
+
+None Capturing Group
+
+Dùng ký hiệu ?:
+
+Greedy (Tình trạng tham lam khi sử dụng dấu chấm để cắt chuỗi)
+
+=> Thêm dấu ? vào sau độ dài của biểu thức dấu .
+
+Các ký hiệu viết tắt: 
+
+\d => Đại diện cho số: [0-9]
+\D => Tất cả cac ký tự trừ số: [^0-9]
+\w => Đại diện cho chữ hoa, thường, 0-9 và gạch ngang: [A-Za-z0-9-]
+\W => Phủ định của \w
+\s => Khoảng trắng
+\S => Không phải khoảng trắng
+
+/0\d{9}/
+
+Chuyển 1 chuỗi thành pattern

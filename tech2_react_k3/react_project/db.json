@@ -1,0 +1,131 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Khóa học Free",
+      "created_at": "2023-03-02 06:00:00",
+      "updated_at": "2023-03-02 06:00:00"
+    },
+    {
+      "id": 2,
+      "name": "Khóa học cơ bản",
+      "created_at": "2023-03-02 06:00:00",
+      "updated_at": "2023-03-02 06:00:00"
+    },
+    {
+      "id": 3,
+      "name": "Khóa học chuyên sâu",
+      "created_at": "2023-03-02 06:00:00",
+      "updated_at": "2023-03-02 06:00:00"
+    }
+  ],
+
+  "courses": [
+    {
+      "id": 1,
+      "name": "Học Family MEP cơ bản",
+      "content": "Trong lĩnh vực xây dựng hiện nay, hầu hết tại các công ty, dự án đều yêu cầu triển khai BIM/Revit vào quá trình thiết kế, thi công, vận hành… Có cầu thì ắt sẽ có cung, lượng nhân sự biết và thạo Revit cũng dần tăng theo và phát sinh các công việc Outsource.",
+      "thumbnail": "https://online.dscons.vn/wp-content/uploads/2021/01/2.Banner-Khoa-hoc-nen-tang-01.png",
+      "price": 300000,
+      "sale_price": 100000,
+      "code": "ma01",
+      "teacher_exp": "7 năm kinh nghiệm",
+      "durations": "1,5 giờ",
+      "lessions_count": 18,
+      "supports_text": "Hỗ trợ qua nhóm Zalo",
+      "supports_url": "https://zalo.me/g/udfqwy194",
+      "supports_image": "https://online.dscons.vn/wp-content/uploads/2021/01/DSCons_Revit-MEP-Online-3.png",
+      "categoryId": 1,
+      "teacher_detail": {
+        "name": "Hoàng An",
+        "image": "https://online.dscons.vn/wp-content/uploads/2021/01/Namnh2.jpg-300x300-1-96x96.png",
+        "bio": "Là giám đốc điều hành công ty TNHH DSCons Việt Nam đồng thời là Giảng viên giảng dạy các khóa học về BIM Tool, quy trình BIM từ 2017 tới nay cho hơn 2000 học viên và các doanh nghiệp lớn như Hawee, Taikisha, Kinden, CDC, T&E, JGC..."
+      },
+      "modules": [
+        {
+          "id": 1,
+          "name": "Phần I - Giới thiệu",
+          "created_at": "2023-03-02 06:00:00",
+          "updated_at": "2023-03-02 06:00:00",
+          "lessions": [
+            {
+              "id": 1,
+              "name": "Bài 1.1 – Tổng quan nội dung và lợi ích khóa học",
+              "durations": 300,
+              "trial": true,
+              "created_at": "2023-03-02 06:00:00",
+              "updated_at": "2023-03-02 06:00:00"
+            },
+
+            {
+              "id": 2,
+              "name": "Bài 1.2 – Những ai nên theo khóa học này?",
+              "durations": 300,
+              "trial": true,
+              "created_at": "2023-03-02 06:00:00",
+              "updated_at": "2023-03-02 06:00:00"
+            },
+
+            {
+              "id": 3,
+              "name": "Bài 1.3 – Lựa chọn phần mềm nào để đáp ứng các nhu cầu",
+              "durations": 300,
+              "trial": true,
+              "created_at": "2023-03-02 06:00:00",
+              "updated_at": "2023-03-02 06:00:00"
+            }
+          ]
+        },
+
+        {
+          "id": 2,
+          "name": "Phần II - Sử dụng phần mềm Viewer",
+          "created_at": "2023-03-02 06:00:00",
+          "updated_at": "2023-03-02 06:00:00",
+          "lessions": [
+            {
+              "id": 4,
+              "name": "Bài 2.1 – Đăng ký tài khoản Autodesk Viewer",
+              "durations": 300,
+              "trial": true,
+              "created_at": "2023-03-02 06:00:00",
+              "updated_at": "2023-03-02 06:00:00"
+            },
+
+            {
+              "id": 5,
+              "name": "Bài 2.2 – Giao diện phần mềm Viewer",
+              "durations": 300,
+              "trial": true,
+              "created_at": "2023-03-02 06:00:00",
+              "updated_at": "2023-03-02 06:00:00"
+            },
+
+            {
+              "id": 6,
+              "name": "Bài 2.3 – Upload mô hình lên phần mềm Viewer",
+              "durations": 300,
+              "trial": true,
+              "created_at": "2023-03-02 06:00:00",
+              "updated_at": "2023-03-02 06:00:00"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lession_detail": [
+    {
+      "id": 1,
+      "name": "Bài 1.1 – Tổng quan nội dung và lợi ích khóa học",
+      "durations": 300,
+      "courseId": 1,
+      "trial": true,
+      "video": "https://youtube.com",
+      "document": "link tai lieu",
+      "view": 0,
+      "created_at": "2023-03-02 06:00:00",
+      "updated_at": "2023-03-02 06:00:00"
+    }
+  ]
+}

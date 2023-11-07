@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Danh sách người dùng</h2>
+      <p>
+        Chào <span class="username"></span>,
+        <a href="#" class="logout">Đăng xuất</a>
+      </p>
+      <button type="button" class="btn btn-primary btn-add">Thêm</button>
+      <hr />
+      <form action="" class="filters">
+        <div class="row">
+          <div class="col-3">
+            <select class="form-select" name="status">
+              <option value="all">Tất cả trạng thái</option>
+              <option value="active">Kích hoạt</option>
+              <option value="inactive">Chưa kích hoạt</option>
+            </select>
+          </div>
+          <div class="col-7">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Từ khóa tìm kiếm..."
+              name="keyword"
+            />
+          </div>
+          <div class="col-2 d-grid">
+            <button type="submit" class="btn btn-primary">Tìm</button>
+          </div>
+        </div>
+      </form>
+      <hr />
+      <table class="table table-bordered users">
+        <thead>
+          <tr>
+            <th width="5%">STT</th>
+            <th>Tên</th>
+            <th width="15%">Trạng thái</th>
+            <th width="5%">Sửa</th>
+            <th width="5%">Xóa</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="pagination-output"></div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="add-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Thêm người dùng
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="">Tên</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  placeholder="Tên..."
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="">Trạng thái</label>
+                <select name="status" class="form-select">
+                  <option value="0">Chưa kích hoạt</option>
+                  <option value="1">Kích hoạt</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Lưu</button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Đóng
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="edit-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Sửa người dùng
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="">Tên</label>
+                <input
+                  type="text"
+                  class="form-control form-item"
+                  name="name"
+                  placeholder="Tên..."
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="">Trạng thái</label>
+                <select name="status" class="form-select form-item">
+                  <option value="0">Chưa kích hoạt</option>
+                  <option value="1">Kích hoạt</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Lưu</button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Đóng
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

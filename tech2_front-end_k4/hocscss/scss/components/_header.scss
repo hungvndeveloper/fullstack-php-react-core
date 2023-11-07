@@ -1,0 +1,55 @@
+
+/*Header*/
+.header{
+    padding: 20px 0;
+    background: $backgroundColorSection;
+    width: getWidth(4);
+    .header{
+        &__topbar{
+            $topBarBg: yellow; //Biến cục bộ
+            background: $topBarBg;
+            padding: 5px 0;
+            display: flex;
+            gap: 10px;
+            &--left{
+                @extend %reset-list;
+                display: flex;
+                gap: 5px;
+                li{
+                    padding: 5px;
+                    a{
+                        color: #fff;
+                        &:hover{
+                            color: yellow;
+                            &::before{
+                                color: red;
+                            }
+                        }
+
+                        &::before{
+                            content: '';
+                        }
+                    }
+                }
+            }
+    
+            &--right{
+                @extend %reset-list;
+                display: flex;
+                gap: 5px;
+            }
+    
+        }
+        $check: true;
+        @if ($check){
+            &__inner{
+                padding: 15px 0;
+            }
+        }
+        
+    }
+    
+}
+
+//Import Responsive
+@import 'responsive/header';

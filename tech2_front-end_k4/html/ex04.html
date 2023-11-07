@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form trong HTML</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <!-- 
+            Danh sách trường
+        -->
+      <div>
+        <label for="fullname">Họ tên</label> <br />
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="Họ và tên..."
+        />
+      </div>
+
+      <div>
+        <label for="email">Email</label> <br />
+        <input type="email" name="email" id="email" placeholder="Email..." />
+      </div>
+
+      <div>
+        <label for="phone">Phone</label> <br />
+        <input type="tel" name="phone" id="phone" placeholder="Phone..." />
+      </div>
+
+      <div>
+        <label for="age">Tuổi</label> <br />
+        <input
+          type="number"
+          min="10"
+          max="30"
+          step="0.1"
+          name="age"
+          id="age"
+          placeholder="Tuổi..."
+        />
+      </div>
+
+      <div>
+        <label for="image">Ảnh</label> <br />
+        <input type="file" name="image" id="image" multiple />
+      </div>
+
+      <div>
+        <label for="birthday">Ngày sinh</label> <br />
+        <input type="date" name="birthday" id="birthday" />
+      </div>
+
+      <div>
+        <label for="keyword">Từ khóa</label> <br />
+        <input
+          type="search"
+          name="keyword"
+          id="keyword"
+          placeholder="Từ khóa..."
+        />
+      </div>
+
+      <div>
+        <label for="keyword">Giá</label> <br />
+        <input type="range" name="price" id="price" />
+      </div>
+
+      <div>
+        <label for="website">Website</label> <br />
+        <input type="url" name="website" id="website" />
+      </div>
+
+      <div>
+        <label for="gender">Giới tính</label> <br />
+        <label> <input type="radio" name="gender" checked /> Nam </label>
+        <label> <input type="radio" name="gender" /> Nữ </label>
+      </div>
+
+      <div>
+        <label for="">Sở thích</label>
+        <label> <input type="checkbox" name="sothich" /> Sở thích 1 </label>
+        <label> <input type="checkbox" name="sothich" /> Sở thích 2 </label>
+        <label> <input type="checkbox" name="sothich" /> Sở thích 3 </label>
+        <label> <input type="checkbox" name="sothich" /> Sở thích 4 </label>
+      </div>
+
+      <div>
+        <label for="province"> Tỉnh / Thành phố </label> <br />
+        <select name="">
+          <option value="">Chọn Tỉnh/Thành phố</option>
+          <option value="Hà Nội">Hà Nội</option>
+          <option value="Đà Nẵng" selected>Đà Nẵng</option>
+          <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+        </select>
+      </div>
+
+      <div>
+        <label for=""> Tin nhắn </label><br />
+        <textarea placeholder="Nội dung tin nhắn..."></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

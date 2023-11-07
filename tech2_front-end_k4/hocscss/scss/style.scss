@@ -1,0 +1,20 @@
+//Import parts
+@import 'parts/variables';
+@import 'parts/reset';
+@import 'parts/fonts';
+@import 'parts/base';
+@import 'parts/mixin';
+
+//Import components
+@import 'components/header';
+@import 'components/footer';
+
+//Import pages
+
+//1. home
+@import 'pages/home/slide';
+@import 'pages/home/about';
+
+//2. products
+@import 'pages/products/breadcrums';
+@import 'pages/products/filters';

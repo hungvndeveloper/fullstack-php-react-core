@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tabs ul{
+    list-style: none;
+    display: flex;
+}
+
+.tabs ul li a{
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 5px 25px;
+}
+
+.tabs ul li a.active{
+    background: green;
+    color: #fff;
+}
+
+.tabs .tab-content .tab-panel:not(.active){
+    display: none;
+}

@@ -1,0 +1,18 @@
+//Parts
+
+@import 'parts/reset';
+@import 'parts/variables';
+@import 'parts/mixin';
+@import 'parts/fonts';
+@import 'parts/base';
+
+//Components
+@import 'components/header';
+@import 'components/footer';
+
+//Pages
+@import 'pages/banner';
+@import 'pages/sales';
+@import 'pages/products';
+@import 'pages/discover';
+@import 'pages/order';

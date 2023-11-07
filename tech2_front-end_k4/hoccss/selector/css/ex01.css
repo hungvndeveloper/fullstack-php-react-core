@@ -1,0 +1,29 @@
+#content{
+    color: rebeccapurple;
+}
+
+.content{
+    color: blueviolet;
+}
+/* h2{
+    color: red;
+} */
+
+.main h3{
+    color: blue;
+}
+
+.main2 h3{
+    color: red;
+}
+
+.menu > li > a{
+    color: red;
+}
+
+h2.feature.title{
+    color: blue;
+}
+h3.title{
+    color: green;
+}

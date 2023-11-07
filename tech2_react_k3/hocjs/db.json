@@ -1,0 +1,91 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "products 01",
+      "price": 12000,
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "name": "products 02",
+      "price": 12000,
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "name": "products 03",
+      "price": 12000,
+      "categoryId": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Chuyên mục 1"
+    },
+    {
+      "id": 2,
+      "name": "Chuyên mục 2"
+    }
+  ],
+  "profile": {
+    "name": "Hoang An"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Name 01 - 01",
+      "email": "email01@gmail.com",
+      "status": 1
+    },
+    {
+      "id": 2,
+      "name": "Name <b>02</b>",
+      "email": "email02@gmail.com",
+      "status": 0
+    },
+    {
+      "name": "Name 03 - 1",
+      "email": "email03@gmail.com",
+      "id": 3,
+      "status": 1
+    },
+    {
+      "name": "Hoàng An",
+      "email": "hoangaan@gmail.com",
+      "id": 4,
+      "status": 0
+    },
+    {
+      "name": "grgg - 02",
+      "email": "fgb902@gmail.com",
+      "id": 5,
+      "status": 1
+    },
+    {
+      "name": "bfgbfb",
+      "email": "bf@gmail.com",
+      "id": 6,
+      "status": 0
+    },
+    {
+      "name": "grgg",
+      "email": "fgb@gmail.com",
+      "id": 7,
+      "status": 1
+    },
+    {
+      "name": "grgg",
+      "email": "fgb@gmail.com",
+      "id": 8,
+      "status": 1
+    },
+    {
+      "name": "grgg - 02",
+      "email": "fgb902@gmail.com",
+      "id": 9,
+      "status": 1
+    }
+  ]
+}

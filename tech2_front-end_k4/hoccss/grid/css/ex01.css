@@ -1,0 +1,13 @@
+.post-item{
+    background: green;
+    color: #fff;
+}
+
+.content, .sidebar{
+    border: 1px solid #ccc;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}

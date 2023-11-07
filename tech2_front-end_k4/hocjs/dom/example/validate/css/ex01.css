@@ -1,0 +1,13 @@
+.password-field{
+    position: relative;
+}
+
+.password-field .show-password{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}

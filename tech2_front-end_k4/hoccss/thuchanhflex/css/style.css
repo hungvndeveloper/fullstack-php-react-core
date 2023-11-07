@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.services{
+    padding: 30px 0;
+}
+
+.services .services-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services .services-title h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.services .services-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.services .services-list .service-item{
+    flex-basis: calc(100% / 3 - 15px);
+    max-width: calc(100% / 3 - 15px);
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 40px;
+ 
+}
+
+.services .services-list .service-item h3{
+    font-size: 1.5rem;
+}
+
+.services .services-list .service-item p{
+    margin: 15px 0;
+}
+
+.services .services-list .service-item .button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.services .services-list .service-item .button a{
+    color: #fff;
+    background: rgb(2, 94, 131);
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+}

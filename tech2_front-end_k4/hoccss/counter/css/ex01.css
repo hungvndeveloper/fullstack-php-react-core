@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.songs{
+    max-width: 300px;
+    margin: 30px auto;
+    border: 1px solid #efefef;
+    padding: 15px;
+    counter-reset: song-item;
+}
+
+.songs .song-item{
+    margin: 15px 0;
+    border-bottom: 1px solid #ccc;
+    /* display: list-item;
+    list-style: decimal-leading-zero;
+    margin-left: 30px; */
+    counter-increment: song-item;
+}
+
+.songs .song-item::before{
+    content: '#'counter(song-item);
+    display: block;
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: green;
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.songs .children{
+    margin-left: 15px;
+    counter-reset: song-item-children;
+}
+
+.songs .children .song-item{
+    counter-increment: song-item-children;
+}
+
+.songs .children .song-item::before{
+    content: '#'counter(song-item)'.'counter(song-item-children);
+}

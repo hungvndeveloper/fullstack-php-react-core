@@ -1,0 +1,27 @@
+Ref là gì?
+
+Javascript thuần => Tương tác với DOM => Truy xuất vào thẻ html
+- document.getElementById()
+- document.getElementsByClassName()
+- document.getElementsByTagName()
+- document.querySelector()
+- document.querySelectorAll()
+
+React JS => Refs
+
+Lưu ý khi dùng Ref 
+
+- Chỉ sử dụng trong trường hợp state không giải quyết được
+- Focus, text selection, media player
+
+=> Bất khả kháng mới cần sử dụng Ref
+
+Ref chỉ tham chiếu trực tiếp đến Element (JSX)
+
+Nếu muốn tham chiếu thông qua 1 component khác => forwardRef
+
+forwardRef => Higher Order Component
+
+2 tham số: props và ref
+
+Các vòng lặp: every, some => break khi return true

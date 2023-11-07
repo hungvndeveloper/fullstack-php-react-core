@@ -1,0 +1,22 @@
+.wrapper{
+    border: 1px solid red;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+}
+
+.content{
+    width: 300px;
+    height: 300px;
+    background: green;
+    margin: 30px auto;
+    transition: all 0.4s linear;
+    /* position: relative;
+    top: 0; */
+}
+
+.wrapper:hover .content{
+    /* top: 50%; */
+    transform: rotate(30deg);
+    transform-origin: right top;
+}

@@ -1,0 +1,9 @@
+.remove{
+    cursor: pointer;
+    color: red;
+}
+
+.todo-list .todo-item.completed span:nth-child(2){
+    text-decoration: line-through;
+    color: gray;
+}

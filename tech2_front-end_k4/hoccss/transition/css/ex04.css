@@ -1,0 +1,47 @@
+.switch-toggle{
+    display: block;
+    width: 70px;
+    height: 30px;
+    margin: 30px auto;
+    border: 1px solid #efefef;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+.switch-toggle input{
+    display: none;
+}
+
+.switch-toggle .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: grey;
+    border-radius: 100px;
+    transition: all 0.4s linear;
+}
+
+.switch-toggle .toggle{
+    background: #fff;
+    height: 30px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.4s linear;
+}
+
+.switch-toggle input:checked ~ .toggle{
+    left: calc(100% - 30px);
+}
+
+.switch-toggle input:checked ~ .bg{
+    background: green;
+}

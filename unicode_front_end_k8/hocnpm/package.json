@@ -1,0 +1,14 @@
+{
+  "name": "hocnpm",
+  "version": "1.0.0",
+  "description": "Demo hoc npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hoang An Unicode",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}

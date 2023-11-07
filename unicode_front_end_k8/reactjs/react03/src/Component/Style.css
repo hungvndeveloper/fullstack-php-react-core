@@ -1,0 +1,9 @@
+.search{
+    outline: none;
+    color: red;
+}
+
+.search::placeholder{
+    color: red;
+    font-style: italic;
+}

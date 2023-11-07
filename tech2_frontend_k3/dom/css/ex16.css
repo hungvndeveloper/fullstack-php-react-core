@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 4000px;
+}
+
+.top{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    display: none;
+}
+.top.show{
+    display: block;
+}
+
+header .inner, header nav{
+    border-bottom: 1px solid #efefef;
+    padding: 10px 0;
+}
+
+header.fixed nav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #fff;
+}

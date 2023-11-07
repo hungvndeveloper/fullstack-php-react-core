@@ -1,0 +1,124 @@
+//Variables
+$maxColumn: 12;
+
+$breakpoints: (sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
+
+:root{
+    --container-width: 1326px;
+    --column-spacing: 20px;
+    --column-small-spacing: 10px;
+    --column-max: #{$maxColumn};
+}
+
+.container{
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+//display: flex
+.d-flex{
+    display: flex;
+}
+
+.justify-content-start{
+    justify-content: flex-start !important;
+}
+
+.justify-content-center{
+    justify-content: center !important;
+}
+
+.justify-content-end{
+    justify-content: flex-end !important;
+}
+
+.align-items-start{
+    align-items: flex-start !important;
+}
+
+.align-items-center{
+    align-items: center !important;
+}
+
+.align-items-end{
+    align-items: flex-end !important;
+}
+
+.flex-row{
+    flex-direction: row ;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--column-spacing);
+    justify-content: space-between;
+}
+
+.row.column-small{
+    column-gap: var(--column-small-spacing);
+}
+
+.row.column-collapse{
+    column-gap: 0;
+}
+
+.row.row-small{
+    row-gap: var(--column-small-spacing);
+}
+
+.row.row-medium{
+    row-gap: var(--column-spacing);
+}
+
+.row.column-small > [class^="col-"]{
+    --column-width: calc(100% / var(--column-max) * var(--column-size) - var(--column-small-spacing));
+}
+
+.row.column-collapse > [class^="col-"]{
+    --column-width: calc(100% / var(--column-max) * var(--column-size));
+}
+
+@mixin grid($type: ''){
+    @for $i from 1 through $maxColumn{
+
+        $className: '.col-#{$type}-#{$i}';
+
+        @if ($type == ''){
+            $className: '.col-#{$i}';
+        }
+
+        #{$className}{
+            --column-size: #{$i};
+            @if ($i != 12){
+                --column-width: calc(100% / var(--column-max) * var(--column-size) - var(--column-spacing));
+            } @else{
+                --column-width: calc(100% / var(--column-max) * var(--column-size));
+            }
+            
+            max-width: var(--column-width);
+            flex-basis: var(--column-width);
+        }
+       
+    }
+}
+
+@include grid();
+
+@each $type, $width in $breakpoints{
+    @media all and (min-width: $width){
+        @if ($type == 'xxl'){
+            .container{
+                padding: 0;
+            }
+        }
+
+        @include grid($type);
+    }
+    
+}

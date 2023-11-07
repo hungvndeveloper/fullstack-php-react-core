@@ -1,0 +1,27 @@
+.popup{
+    max-width: 600px;
+    margin: 0 auto;
+    position: fixed;
+    top: 5%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: #fff;
+    display: none;
+}
+
+.popup.open{
+    display: block;
+}
+
+.popup-bg{
+    background: #00000099;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 500;
+}

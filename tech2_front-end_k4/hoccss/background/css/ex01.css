@@ -1,0 +1,14 @@
+body{
+    /* background-color: yellow;
+    background-image: url('../images/zhou-xian-0dqwsMs3g1A-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0; */
+    height: 2000px;
+    /* background-attachment: fixed; */
+    background: fixed yellow url('../images/zhou-xian-0dqwsMs3g1A-unsplash.jpg') no-repeat 0 0;
+    background-size: cover;
+}
+.content{
+    background-color: rgba(0, 255, 255, 0.414);
+}

@@ -1,0 +1,69 @@
+Tên dự án: Blog cá nhân 
+
+1. HomePage: Hiển thị danh sách các bài viết mới nhất 
+
+2. Chuyên mục: Hiển thị danh sách các bài viết theo chuyên mục 
+
+3. Chi tiết bài viết: Hiển thị nội dung chi tiết của 1 bài viết
+
+4. Đăng bài: 
+
+- Đăng nhập, đăng ký
+- Xây dựng khung soạn thảo bài viết (hashtag)
+- Gửi email cho tài khoản đã đăng bài và admin
+
+Bổ sung: 
+
+- Phân trang (Load more)
+- Tìm kiếm
+
+Các bước triển khai
+
+1. Xây dựng cấu trúc File folder
+
+- Components => Global Components: Component dùng chung cho các modules 
+
+- Pages => Module Components: Component tương ứng với các route 
+
+- Assets => Chứa Fonts, CSS, Img 
+
+- Routes => Chứa config liên quan đến Routes 
+
+- Configs => Chứa config chung của dự án
+
+- Services => Chứa các services: Helper, Context,...
+
+Ý tưởng call api
+
+- Tạo ra 1 class hoặc functions để thực hiện call api\
+
+fetch('url', {
+    method: 'post'
+})
+
+Trang chi tiết blog 
+
+1. Xác định được api
+
+2. Viết hàm call api
+
++ Dùng httpClient để gọi 
++ setState
+
+3. Render dữ liệu: Render state 
+
+4. Xử lý tối ưu: 
+
+- Loading 
+- 404
+
+Authentication => Xác thực (Đăng nhập)
+
+Authorization => Phân quyền (Được làm gì)
+
+API: 
+
+http://localhost:3004 => api dữ liệu chung của blog 
+http://localhost:3005 => api users (Dùng làm authentication)
+
+Middleware => Bộ lọc trung gian từ route tới component

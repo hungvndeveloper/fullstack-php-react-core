@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.col-1{
+    width: 25%;
+    height: 100px;
+    background: green;
+    color: #fff;
+    float: left;
+}
+
+.col-2{
+    width: 25%;
+    height: 150px;
+    background: blue;
+    color: #fff;
+    float: left;
+}
+
+.col-3{
+    width: 25%;
+    height: 200px;
+    background: blueviolet;
+    color: #fff;
+    float: left;
+}
+
+.container{
+    width: 1200px;
+    margin: 30px auto;
+    border: 1px solid red;
+    overflow: auto;
+}
+
+/* .text{
+    clear: both;
+} */
+
+.clear{
+    clear: both;
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.item{
+    width: calc(100% / 3);
+    float: left;
+}

@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Hoàng An",
+      "email": "hoangan.web@gmail.com"
+    },
+
+    {
+      "id": 2,
+      "name": "Hoàng An 2",
+      "email": "hoangan.web2@gmail.com"
+    }
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "name": "Nồi cơm điện 1"
+    },
+
+    {
+      "id": 2,
+      "name": "Nồi cơm điện 2"
+    },
+
+    {
+      "id": 3,
+      "name": "Tủ lạnh 1"
+    }
+  ]
+}

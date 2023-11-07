@@ -1,0 +1,56 @@
+.title::before{
+    content: '';
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: red;
+    margin-right: 5px;
+    margin-top: 3px;
+    border-radius: 50%;
+}
+
+.title.active::before{
+    content: '•';
+    font-size: 3rem;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+/* .title::after{
+    content: 'B';
+} */
+
+/* .content::first-line{
+    color: green;
+} */
+
+.content::first-letter{
+    color: red;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.content::selection{
+    color: yellow;
+    background: green;
+}
+
+.form{
+    background: green;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.form input{
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    color: #fff;
+}
+
+.form input::placeholder{
+    color: #fff;
+    font-style: italic;
+}

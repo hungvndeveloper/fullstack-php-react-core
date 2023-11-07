@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ex14.css" />
+  </head>
+  <body>
+    <button type="button" data-toggle="modal" data-target="#modal_01">
+      Open Modal 01
+    </button>
+    <button type="button" data-toggle="modal" data-target="#modal_02">
+      Open Modal 02
+    </button>
+
+    <button type="button" data-toggle="modal" data-target="#modal_03">
+      Open Modal 03
+    </button>
+
+    <div class="modal" id="modal_01" data-duration="800">
+      <div class="modal__header">
+        <h3>Modal 01</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+      </div>
+      <div class="modal__body">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+          provident exercitationem quam nam illo facere animi doloremque natus,
+          sed nostrum quod doloribus reiciendis voluptatibus rem consequatur
+          autem aperiam! Animi, maxime?
+        </p>
+        <button data-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+
+    <div class="modal" id="modal_02">
+      <div class="modal__header">
+        <h3>Modal 02</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+      </div>
+      <div class="modal__body">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+          provident exercitationem quam nam illo facere animi doloremque natus,
+          sed nostrum quod doloribus reiciendis voluptatibus rem consequatur
+          autem aperiam! Animi, maxime?
+        </p>
+        <button data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+    <div class="modal" id="modal_03" data-duration="1000">
+      <div class="modal__header">
+        <h3>Modal 03</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+      </div>
+      <div class="modal__body">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+          provident exercitationem quam nam illo facere animi doloremque natus,
+          sed nostrum quod doloribus reiciendis voluptatibus rem consequatur
+          autem aperiam! Animi, maxime?
+        </p>
+        <button data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+    <script src="js/ex14.js"></script>
+  </body>
+</html>

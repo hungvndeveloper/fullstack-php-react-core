@@ -1,0 +1,88 @@
+.banner{
+    background: url('../images/header-bg.jpg') no-repeat;
+    background-size: cover;
+
+    .banner__inner{
+        padding: 15% 0;
+        .banner--text{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .text__highlight{
+                font-family: BebasNeue, sans-serif;
+                font-size: 1.47rem;
+                font-weight: normal;
+                border: 2px dashed $primaryColor;
+                align-self: flex-start;
+                padding: 3px 10px;
+            }
+
+            h1, h2{
+                font-family: "Alfa Slab One", sans-serif;
+                margin: 0;
+                text-shadow: 4px 4px 0 #fff;
+                text-transform: uppercase;
+            }
+
+            h1{
+                font-size: 4rem;
+
+            }
+
+            h2{
+                font-size: 3.5rem;
+            }
+        }
+        .banner--image{
+            text-align: right;
+            position: relative;
+            .badge{
+                width: 170px;
+                height: 170px;
+                background: #bf2222;
+                color: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: BebasNeue, sans-serif;
+                position: absolute;
+                left: 15%;
+                bottom: 0;
+                .badage__inner{
+                    border-radius: 50%;
+                    border: 2px dashed #fff;
+                    width: 90%;
+                    height: 90%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding-top: 10px;
+                    > * {
+                        height: 55%;
+                    }
+
+                    span{
+                        &:nth-child(1){
+                            font-size: 4.3rem;
+                            
+                        }
+                        &:nth-child(2){
+                            font-size: 1.89rem;
+                            
+                        }
+
+                        &.last{
+                            font-size: 2rem;
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import 'responsive/banner';

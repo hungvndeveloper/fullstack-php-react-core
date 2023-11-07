@@ -1,0 +1,29 @@
+@keyframes color {
+    from {
+        background: blueviolet;
+    }
+
+    50% {
+        background: yellow;
+    }
+
+    to {
+        background: green;
+    }
+}
+
+.content{
+    width: 300px;
+    height: 300px;
+    background: red;
+    color: #fff;
+    margin: 30px auto;
+    /* animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-delay: 2s; */
+    animation: color 2s linear infinite both; 
+}

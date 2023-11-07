@@ -1,0 +1,8 @@
+@mixin section-base($space: 30px, $background: #fff){
+    padding: $space 0;
+    background: $background;
+}
+
+@mixin transition($props: all, $durations: 0.4s){
+    transition: $props $durations linear;
+}

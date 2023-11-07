@@ -1,0 +1,30 @@
+.toggle{
+    width: 300px;
+    margin: 30px auto;
+    border: 1px solid red;
+}
+
+.toggle .content{
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    overflow: hidden;
+    transition: all 0.4s linear;
+    opacity: 0;
+}
+
+.toggle label{
+    background: green;
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    width: 50px;
+}
+
+.toggle input{
+    display: none;
+}
+
+.toggle input:checked + .content{
+    transform: scaleY(1);
+    opacity: 1;
+}

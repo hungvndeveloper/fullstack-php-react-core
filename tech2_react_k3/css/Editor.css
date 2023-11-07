@@ -1,0 +1,17 @@
+.editor-wrap {
+  position: relative;
+}
+.editor-wrap .editor {
+  height: 200px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  line-height: 1.2;
+}
+.editor-wrap .toolbar {
+  position: absolute;
+  z-index: 100;
+}
+.editor-wrap .toolbar button {
+  border: 1px solid #efefef;
+  padding: 5px 10px;
+}/*# sourceMappingURL=Editor.css.map */

@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.content{
+    width: 400px;
+    margin: 30px auto;
+    border: 1px solid red;
+}
+
+.content ul{
+    /* list-style-position: inside;
+    list-style-type: none; */
+    /* list-style: square inside; */
+    list-style: none;
+}
+
+.content ul li{
+    padding-left: 20px;
+    background: url('../images/right-arrow.png') no-repeat;
+    background-size: 16px;
+    margin: 5px 0;
+}
+
+.content ul li:hover{
+    background: url('../images/right-chevron-.png') no-repeat;
+    background-size: 16px;
+}

@@ -1,0 +1,19 @@
+
+
+.editor-wrap{
+    position: relative;
+    .editor{
+        height: 200px;
+        border: 1px solid #ccc;
+        padding: 15px;
+        line-height: 1.2;
+    }
+    .toolbar{
+        position: absolute;
+        z-index: 100;
+        button{
+            border: 1px solid #efefef;
+            padding: 5px 10px;
+        }
+    }
+}

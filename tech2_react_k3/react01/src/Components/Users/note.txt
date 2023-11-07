@@ -1,0 +1,43 @@
+Xây dựng chức năng cập nhật người dùng 
+
+1. Xây dựng hàm lấy user từ id: getUser(id) => get api 
+
+2. Xây dựng hàm update user lên api: updateUser(data, id) => put api
+
+3. Click vào nút sửa => Show modal (Đi kèm với id cần sửa) => gọi hàm getUser(id) => Lấy được thông tin user => setState => Hiển thị state vào các input của modal
+
+4. Xử lý submit form => giống như phần thêm => gọi hàm updateUser(data, id)
+
+Xây dựng chức năng lọc 
+
+1. Tạo state filters để lưu lại giá trị cuả các input trong filters (giống state form)
+
+2. Tạo handleChange => Cập nhật giá trị các input vào state filters 
+
+3. Tạo handleSubmit => Lấy các giá trị trong state filters => Truyền vào hàm getUssers()
+
+Tham khảo: Sửa lại hàm getFilters(filters = {})
+
+=> Sử dụng: new UrlSearchPrams => Chuyển object => search query
+
+filters = {
+    status: true,
+    q: 'a'
+}
+
+=> status=true&q=a
+
+Thuật toán phân trang 
+
+1. Lấy tổng số lượng bản ghi
+
+2. Tính tổng số trang: Tổng số bản ghi / giới hạn bản ghi (limit, perPage)
+
+3. Render phân trang: 1 - 2 - 3 - 4
+
+4. Xử lý chuyển trang khi click vào 1-2-3-4
+
+Buổi sau: 
+
+- Xây dựng Higher Order Components
+- React.memo

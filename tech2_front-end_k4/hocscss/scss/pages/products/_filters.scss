@@ -1,0 +1,61 @@
+.filters{
+    @include position('tr', 20px, 30px, 10);
+}
+
+// $length: 12;
+// @for $i from 1 through $length{
+//     //Sử dụng cú pháp lồng selector như bình thường
+//     .col-#{$i}{
+//         width: 10% * $i;
+//         .item{
+//             padding: 10px * $i 0;
+//         }
+//     }
+// }
+
+// $sizes: 0, 25, 50, 75, 100;
+
+// @each $size in $sizes{
+//     .w-#{$size}{
+//         @if ($size == 0){
+//             width: 0
+//         } @else{
+//             width: $size + 0%;
+//         }
+        
+//     }
+
+//     .h-#{$size}{
+//         @if ($size == 0){
+//             height: 0
+//         } @else{
+//             height: $size + 0%;
+//         }
+        
+//     }
+// }
+
+// $values: (xs, 10px, normal), (sm, 20px, italic), (md, 30px, bold);
+
+// @each $breakpoint, $size, $style in $values{
+
+//     @for $i from 1 through 12{
+//         .col-#{$breakpoint}-#{$i}{
+//             font-size: $size;
+//             @if ($style != 'bold'){
+//                 font-style: $style;
+//             } @else{
+//                 font-weight: $style;
+//             }
+//         }
+//     }
+// }
+
+//key: value
+$values: (small: 20px, medium: 50px, large: 100px);
+
+@each $breakpoint, $size in $values{
+    .item-#{$breakpoint}{
+        font-size: $size;
+    }
+}

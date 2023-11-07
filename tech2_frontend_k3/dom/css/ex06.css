@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.chat{
+    position: fixed;
+    width: 300px;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #efefef;
+    transition: all 0.4s linear;
+}
+
+.chat .chat__title{
+    background: green;
+    color: #fff;
+    text-align: center;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.chat .chat__content{
+    padding: 15px;
+}
+
+.chat.open{
+    --size-translate: calc(100% - 32px);
+    transform: translateY(var(--size-translate));
+}

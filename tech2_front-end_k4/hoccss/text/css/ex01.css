@@ -1,0 +1,48 @@
+/* .content{
+    color: blue;
+}
+
+.content p{
+    color: red;
+}
+
+.content p{
+    color: unset;
+}
+.content{
+    color: unset;
+} */
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+html{
+    font-size: 18px;
+}
+
+.content{
+    font-size: 14px;
+}
+
+.content p{
+    font-size: 150%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main p{
+    /* font-weight: bold;
+    font-style: italic;
+    text-decoration: underline line-through;
+    text-transform: capitalize;
+    text-indent: 20px; */
+    text-align: right;
+    text-align-last: center;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+.title{
+    word-wrap: break-word;
+}

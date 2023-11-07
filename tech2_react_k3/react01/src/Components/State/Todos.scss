@@ -1,0 +1,19 @@
+.todo-item {
+  &.completed {
+    span {
+      &:nth-child(2) {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  span {
+    &:nth-child(2) {
+      width: 80%;
+    }
+    &:last-child {
+      cursor: pointer;
+      color: red;
+    }
+  }
+}

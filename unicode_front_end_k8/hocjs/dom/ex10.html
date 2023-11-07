@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ex10.css" />
+  </head>
+  <body>
+    <div class="tabs" data-animation="true" data-animation-duration="400">
+      <nav class="tabs__nav">
+        <ul>
+          <li class="active">
+            <a href="#" class="nav-item" data-target="#tab01">Tab 01</a>
+          </li>
+          <li><a href="#" class="nav-item" data-target="#tab02">Tab 02</a></li>
+          <li><a href="#" class="nav-item" data-target="#tab03">Tab 03</a></li>
+          <li><a href="#" class="nav-item" data-target="#tab04">Tab 04</a></li>
+          <!-- <li class="active">
+            <span data-target="#tab01" class="nav-item">Tab 01</span>
+          </li>
+          <li>
+            <span data-target="#tab02" class="nav-item">Tab 02</span>
+          </li>
+          <li>
+            <span data-target="#tab03" class="nav-item">Tab 03</span>
+          </li>
+          <li>
+            <span data-target="#tab04" class="nav-item">Tab 04</span>
+          </li> -->
+        </ul>
+      </nav>
+      <!--End .tabs__nav-->
+      <div class="tabs__content">
+        <div class="tabs--panel active show" id="tab01">Content Tab 01</div>
+        <div class="tabs--panel" id="tab02">Content Tab 02</div>
+        <div class="tabs--panel" id="tab03">Content Tab 03</div>
+        <div class="tabs--panel" id="tab04">Content Tab 04</div>
+      </div>
+      <!--End .tabs__content">-->
+    </div>
+
+    <script src="js/ex10.js"></script>
+  </body>
+</html>

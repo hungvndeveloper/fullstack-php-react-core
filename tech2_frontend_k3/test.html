@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app"></div>
+    <script>
+      class Component {
+        html = ([first, ...string], ...values) => {
+          const result = values
+            .reduce(
+              (prevValue, newValue) => {
+                return prevValue.concat(newValue, string.shift());
+              },
+              [first]
+            )
+            .filter((item) => (item && item !== true) || item == 0)
+            .map((item) => {
+              if (typeof item === "function") {
+                window[item.name] = item;
+                return item.name + "()";
+              }
+              return item;
+            });
+
+          return result.join("");
+        };
+      }
+      class Home extends Component {
+        handleClick = () => {
+          console.log(this);
+          console.log("Click");
+        };
+
+        render() {
+          const name = "Javascript";
+
+          const users = ["An", "Đạt", "Tùng"];
+
+          const check = true;
+
+          const getError = () => {
+            return "Lỗi cú pháp";
+          };
+
+          //console.log(this);
+
+          return this.html`<header>
+            <h1>Unicode Academy ${name}</h1>
+            ${users.map((user) => `<p>${user}</p>`)}
+            <h2>${check ? "Ok" : "Not ok"}</h2>
+            <h2 class="${getError() && "error"}">Học javascript</h2>
+            <button onclick=${this.handleClick}>Click me</button>
+          </header>`;
+        }
+      }
+
+      const home = new Home();
+      const render = home.render();
+      document.querySelector(".app").innerHTML = render;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        height: 2000px;
+        scroll-behavior: smooth;
+      }
+      .top {
+        background: red;
+        color: #fff;
+        border: none;
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 0.4s linear;
+      }
+
+      .top.show {
+        opacity: 1;
+        transform: translateX(0) rotate(-360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HEADER</h1>
+    </header>
+    <button class="top">Top</button>
+    <script src="js/ex01.js"></script>
+  </body>
+</html>

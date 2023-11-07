@@ -1,0 +1,17 @@
+2 cơ chế khi làm việc với Javascript
+
+1. Server side: 
+
+- Dùng Javascript để can thiệp vào html, css đã có sẵn
+- Tạo file js, import vào dự án thông qua thẻ script 
+
+2. Client Side
+
+- Sử dụng Javascript để tạo giao diện html, css,...
+- Cần làm quen với các Package Manager, Webpack,...
+
+Package Manager: 
+- npm 
+- yarn 
+
+Webpack: Gọi là module bundle

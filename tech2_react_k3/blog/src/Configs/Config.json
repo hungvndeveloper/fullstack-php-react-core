@@ -1,0 +1,5 @@
+{
+    "SERVER_API": "http://localhost:3004",
+    "SERVER_API_AUTH": "http://localhost:3005",
+    "POST_LIMIT": 4
+}

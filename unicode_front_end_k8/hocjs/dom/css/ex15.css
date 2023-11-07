@@ -1,0 +1,22 @@
+
+.progress .progress-bar span{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -8px;
+
+}
+
+.progress .progress-bar{
+    position: relative;
+    overflow: visible;
+    transition: none;
+}
+
+.progress{
+    cursor: pointer;
+}

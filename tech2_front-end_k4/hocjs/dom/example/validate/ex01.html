@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/ex01.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <h2>Login form</h2>
+          <form action="" class="login-form">
+            <div class="mb-3">
+              <label for="">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                name="email"
+                placeholder="Email..."
+              />
+              <span class="error text-danger"></span>
+            </div>
+            <div class="mb-3">
+              <label for="">Mật khẩu</label>
+              <div class="password-field">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Mật khẩu..."
+                  name="password"
+                />
+
+                <span class="show-password">
+                  <i class="fa-sharp fa-regular fa-eye-slash"></i>
+                </span>
+              </div>
+              <span class="error text-danger"></span>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Đăng nhập</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/ex01.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+html{
+    font-size: $fontSize;
+}
+
+body{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $primaryColor;
+    font-family: $fontFamily;
+}
+
+a{
+    color: $primaryColor;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: $primaryColor;
+    margin: 15px 0;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+input, textarea, button{
+    border: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.btn{
+    background: #bf2222;
+    color: #fff;
+    padding: 10px 30px;
+    font-family: "Alfa Slab One", sans-serif;
+    display: inline-block;
+}

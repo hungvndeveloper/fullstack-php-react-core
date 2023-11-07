@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "email": "hoangan.web@gmail.com",
+      "password": "$2a$10$pZaXn520f.d7whMvAbuc/OwnsfbH.upMFJHTVU99NTqoHQyIxy9PC",
+      "name": "Hoàng An",
+      "id": 1
+    },
+    {
+      "email": "hoanganit19@gmail.com",
+      "password": "$2a$10$tGPthQ6WJbGLgVXULSJ2q.382QKKS6xBJDNqzn/nJqS6I3t6zexf6",
+      "name": "Mr Hoàng Anh",
+      "id": 2
+    },
+    {
+      "email": "vantuan@gmail.com",
+      "password": "$2a$10$NYPmBT0ig1wfoVZJI/YA0OWhXHNvb.SaLbHSQjPBEqvpVicaEuADy",
+      "name": "Văn Tuấn",
+      "id": 3
+    },
+    {
+      "email": "abc@gmail.com",
+      "password": "$2a$10$YG8/cM89PtMOKj7wKmXoOOWT3q3qfzqLme7v0NiDJvaASytF8RGTi",
+      "name": "cvsdvdfv",
+      "id": 4
+    }
+  ]
+}

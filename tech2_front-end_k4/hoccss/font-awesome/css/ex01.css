@@ -1,0 +1,14 @@
+.rating{
+    text-align: center;
+}
+
+
+.rating .fa-star{
+    color: grey;
+    cursor: pointer;
+}
+
+.rating .rated, 
+.rating .fa-star:hover{
+    color: rgb(191, 191, 6);
+}

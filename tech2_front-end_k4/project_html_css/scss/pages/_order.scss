@@ -1,0 +1,44 @@
+.orders{
+    @include section-base(60px);
+
+    .orders__title{
+        text-align: center;
+        h3{
+            font-family: BebasNeue, sans-serif;
+            font-size: 1.8rem;
+        }
+
+        h2{
+            font-family: "Alfa Slab One", sans-serif;
+            font-size: 3.1rem;
+        }
+    }
+
+    .orders-form{
+        padding-bottom: 10%;
+        input{
+            padding: 10px 20px;
+            border: 1px solid #bdbdbd;
+            width: 100%;
+            font-size: 1.3rem;
+            font-family: BebasNeue, sans-serif;
+            &::placeholder{
+                color: #3d3d3d;
+                font-weight: normal;
+            }
+        }
+
+        button{
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            height: 100%;
+            @include transition;
+            &:hover{
+                background: $secondaryColor;
+            }
+        }
+    }
+}
+
+@import 'responsive/order';

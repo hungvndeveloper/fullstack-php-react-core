@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "name": "An",
+      "email": "an@gmail.com",
+      "status": true,
+      "id": 1
+    },
+    {
+      "name": "vdfgvdf",
+      "email": "fds@gmail.com",
+      "status": false,
+      "id": 2
+    }
+  ]
+}

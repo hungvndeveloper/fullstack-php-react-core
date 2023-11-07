@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript DOM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container py-5">
+      <button type="button" class="btn btn-primary new-btn">Thêm mới</button>
+      <hr />
+      <div class="mb-3">
+        <input
+          type="search"
+          class="form-control keyword"
+          placeholder="Từ khóa..."
+        />
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="5%">STT</th>
+            <th>Tên</th>
+            <th>Email</th>
+            <th width="5%">Sửa</th>
+            <th width="5%">Xóa</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="newModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Thêm mới</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="">Tên</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Tên..."
+                  name="name"
+                />
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email..."
+                  name="email"
+                />
+                <div class="invalid-feedback"></div>
+              </div>
+              <button type="submit" class="btn btn-primary">Lưu</button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Đóng
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="editModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Cập nhật</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="">Tên</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Tên..."
+                  name="name"
+                />
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email..."
+                  name="email"
+                />
+                <div class="invalid-feedback"></div>
+              </div>
+              <button type="submit" class="btn btn-primary">Lưu</button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Đóng
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="js/ex08.js"></script>
+  </body>
+</html>

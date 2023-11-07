@@ -1,0 +1,34 @@
+.btn{
+    background: green;
+    color: #fff;
+    border: none;
+}
+
+/* .btn:hover{
+    background: red;
+} */
+
+/* .btn:active{
+    background: blue;
+} */
+
+.btn:focus{
+    background: yellow;
+}
+
+.field-item{
+    outline: none;
+}
+
+.field-item:focus{
+    border: 1px solid green;
+}
+
+.list-checkbox input:checked ~ span{
+    color: red;
+}
+
+.field-item:disabled{
+    background: #eee;
+    font-style: italic;
+}

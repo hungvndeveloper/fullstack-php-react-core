@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.todos{
+    width: 400px;
+    margin: 30px auto;
+}
+
+.todos .todos__title{
+    text-align: center;
+}
+
+.todos .todos__form{
+    margin-bottom: 15px;
+}
+
+.todos .todos__form input{
+    width: 100%;
+    outline: none;
+    padding: 5px 15px;
+}
+
+.todos .todos--item{
+    display: flex;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.todos .todos--item .name{
+    flex-basis: 90%;
+}
+
+.todos .todos--item .remove{
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.todos .todos--item.completed .name{
+    text-decoration: line-through;
+    color: gray;
+    font-style: italic;
+}
+
+.todos .todos__inner{
+    max-height: 400px;
+    overflow-y: auto;
+}

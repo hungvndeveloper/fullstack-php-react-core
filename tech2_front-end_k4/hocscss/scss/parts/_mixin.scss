@@ -1,0 +1,49 @@
+//Mixin
+@mixin section-base($background: #fff){
+    padding: 30px 0;
+    margin: 0 auto;
+    background: $background;
+}
+
+@mixin center($width, $props, $value){
+    width: $width;
+    margin: 0 auto;
+    #{$props}: $value;
+}
+
+@mixin position($pos: 'none', $x: 0, $y: 0, $z: 0){
+    position: absolute;
+    @if ($z > 0){
+        z-index: $z;
+    }
+    
+    @if ($pos == 'tl'){
+        top: $x;
+        left: $y;
+    } @else if ($pos == 'tr'){
+        top: $x;
+        right: $y;
+    } @else if ($pos == 'bl'){
+        bottom: $x;
+        left: $y;
+    } @else if ($pos == 'br'){
+        bottom: $x;
+        right: $y;
+    } @else{
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0
+    }
+}
+
+//Placholders
+%reset-list{
+    list-style: none;
+    margin: 0;
+}
+
+//Functions
+@function getWidth($column){
+    @return calc(100% / $column);
+}

@@ -1,0 +1,13 @@
+.content{
+    background: palevioletred;
+    width: 600px;
+    border: 1px solid red;
+}
+
+.content:hover img{
+    opacity: 0.5;
+}
+
+.content:hover h1{
+    color: #fff;
+}

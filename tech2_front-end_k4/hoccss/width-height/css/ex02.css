@@ -1,0 +1,15 @@
+.content{
+    width: 200px;
+    background: green;
+    color: #fff;
+    min-width: 300px;
+}
+
+.image-box{
+    width: 300px;
+    border: 1px solid red;
+}
+
+.image-box img{
+    max-width: 100%;
+}

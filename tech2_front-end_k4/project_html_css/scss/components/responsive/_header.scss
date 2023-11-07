@@ -1,0 +1,41 @@
+
+@media screen and (min-width: 992px) {
+    .header{
+        padding: 54px 0;
+        .row{
+            > [class^="col-"]{
+               order: unset !important;
+               &:nth-child(2){
+                align-items: flex-end !important;
+                }
+                &:nth-child(3){
+                    display: none;
+                }
+           }
+       }
+
+       .header__menu{
+
+        position: static;
+        padding: 25px 0px;
+        background: none;
+        opacity: 1;
+        ul{
+            flex-direction: row;
+            li{
+                a{
+                    color: unset;
+                    border: unset;
+                    padding: unset;
+                }
+            }
+        }
+       }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header{
+        position: absolute;
+    }
+}

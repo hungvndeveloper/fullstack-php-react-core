@@ -1,0 +1,7 @@
+.search-box ul{
+    display: none;
+}
+
+.search-box input:focus ~ ul{
+    display: block;
+}

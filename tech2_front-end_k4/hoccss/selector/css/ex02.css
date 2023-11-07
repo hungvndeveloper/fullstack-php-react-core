@@ -1,0 +1,34 @@
+p ~ div ul{
+    background: green;
+}
+
+.main .content+.content+.content{
+    color: red;
+}
+
+.main2 h3 + h4{
+    color: blue;
+}
+
+.toggle input{
+    display: none;
+}
+
+.toggle .content-toggle{
+    display: none;
+}
+
+.toggle input:checked ~ .content-toggle{
+    display: block;
+}
+
+/* *{
+    color: red;
+} */
+
+.lists-website a{
+    color: green;
+}
+.lists-website a[href^="https://unicode.vn"]{
+    color: red;
+}

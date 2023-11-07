@@ -1,0 +1,10 @@
+.todo-list .todo-item{
+    display: flex;
+    gap: 10px;
+}
+
+.todo-list .todo-item .remove{
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}

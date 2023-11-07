@@ -1,0 +1,50 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.posts{
+    padding: 30px 0;
+}
+
+.posts .title{
+    border-bottom: 1px solid #ddd;
+    font-size: 2rem;
+}
+
+.posts .posts-list{
+    margin: 20px 0;
+}
+
+.posts .posts-list .post-item h3 a:hover{
+    color: red;
+}
+
+.posts .posts-list .post-item .post-image{
+    height: 190px;
+    overflow: hidden;
+}
+
+.posts .posts-list .post-item img{
+    transition: all 0.4s linear;
+}
+
+.posts .posts-list .post-item img:hover{
+    transform: scale(1.1) rotate(2deg);
+}

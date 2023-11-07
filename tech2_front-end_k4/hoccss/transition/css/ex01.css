@@ -1,0 +1,51 @@
+.block{
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    background: green;
+    color: #fff;
+    /* transition-property: border-radius;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+    transition-delay: 1s; */
+    transition: 0.5s linear;
+    transition-property: border-radius, background;
+}
+
+.block:hover{
+    border-radius: 50%;
+    background: red;
+}
+
+.element{
+    text-align: center;
+}
+
+.element button{
+    background: green;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.element button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    background: red;
+    transition: all 0.4s linear;
+}
+
+.element button span{
+    position: relative;
+    z-index: 1;
+}
+
+.element button:hover::before{
+    right: 0;
+}

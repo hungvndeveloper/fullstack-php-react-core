@@ -1,0 +1,24 @@
+.todos{
+    max-width: 80%;
+    margin: 30px auto;
+    .todos__list{
+        .todos--item{
+            margin: 15px 0;
+            border-bottom: 1px solid #efefef;
+            .remove{
+                color: red;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            &.completed{
+                span{
+                    &:nth-child(2){
+                        text-decoration: line-through;
+                        color: grey;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}

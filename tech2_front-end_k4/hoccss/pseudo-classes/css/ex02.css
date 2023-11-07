@@ -1,0 +1,23 @@
+/* .lists .item:first-child{
+    color: red;
+}
+
+.lists .item:last-child{
+    color: green;
+} */
+
+.lists .item:first-of-type{
+    color: red;
+}
+
+.lists .item:last-of-type{
+    color: green;
+}
+
+/* .products h2:nth-child(2n+1){
+    color: red;
+} */
+
+.products h2:nth-of-type(2n+1){
+    color: red;
+}

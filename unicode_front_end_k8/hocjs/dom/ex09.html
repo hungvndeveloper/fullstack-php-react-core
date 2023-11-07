@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ex09.css" />
+  </head>
+  <body>
+    <button data-toggle="modal" data-target="#modal_01">Open Modal</button>
+
+    <button data-toggle="modal" data-target="#modal_02">Open Modal 02</button>
+
+    <div class="modal" id="modal_01" data-duration="200">
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+        <a href="#" class="close" data-dismiss="modal">&times;</a>
+      </div>
+      <div class="modal-body">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+          consectetur sapiente culpa maxime soluta fugit, unde debitis dolorum
+          placeat tempore vero sequi repellendus corrupti laboriosam voluptatum
+          numquam aut! Est, ullam?
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal">Đóng</button>
+        <h3>Modal Footer</h3>
+      </div>
+    </div>
+
+    <div class="modal" id="modal_02" data-animation="false" data-duration="500">
+      <div class="modal-header">
+        <h2>Modal Header 02</h2>
+        <a href="#" class="close" data-dismiss="modal">&times;</a>
+      </div>
+      <div class="modal-body">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+          consectetur sapiente culpa maxime soluta fugit, unde debitis dolorum
+          placeat tempore vero sequi repellendus corrupti laboriosam voluptatum
+          numquam aut! Est, ullam?
+        </p>
+      </div>
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+        <button type="button" data-dismiss="modal">Đóng cửa sổ</button>
+      </div>
+    </div>
+    <!-- <div class="modal-bg"></div> -->
+    <script src="js/ex09.js"></script>
+  </body>
+</html>

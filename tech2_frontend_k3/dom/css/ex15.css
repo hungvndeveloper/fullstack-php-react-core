@@ -1,0 +1,45 @@
+@keyframes playing {
+    from {
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.player .player__image {
+    text-align: center;
+
+}
+
+.player .player__image img {
+    max-width: 200px;
+    transition: 0.4s all linear;
+    border-radius: 25px;
+}
+
+.player .player__image img.playing{
+    animation: playing 2s linear infinite both;
+    border-radius: 50%;
+}
+
+.player .player__image img.speedup{
+    animation: playing 1s linear infinite both;
+}
+
+.player .player__inner .player__inner--actions {
+    cursor: pointer;
+}

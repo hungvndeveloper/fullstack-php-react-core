@@ -1,0 +1,24 @@
+Higher Order Component
+
+- Component cấp cao hơn (Component bọc component)
+- Thường được bọc khi Export Component
+- Không giới hạn số cấp Higher Order Component
+- Kế thừa logic từ các Higher Order Component
+- HOC sẽ truyền dữ liệu tới component chính thông qua Props
+
+=> Bài toán thực tế 
+
+- Sử dụng được các thư viện mới trong Class Components (Thư viện mới sử dụng Hook)
+- Giải quyết bài toán truyền dữ liệu từ Global State (State toàn cục)
+
+Một số Higher Order Component có sẵn 
+
+- React.memo()
+- React.forwardRef()
+
+Giải pháp quản lý Global State 
+
+1. Redux (Thư viện ngoài)
+2. React Context (tích hợp sẵn vào React)
+3. React Query
+

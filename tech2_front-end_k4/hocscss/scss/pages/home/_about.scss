@@ -1,0 +1,10 @@
+.about{
+    
+    box-shadow: 3px 3px 5px 5px #ccc;
+    @include section-base(gray);
+
+    @include center(80%, font-size, 1.5rem);
+}
+
+//Import responsive
+@import 'responsive/about';
